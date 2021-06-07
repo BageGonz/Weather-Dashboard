@@ -6,5 +6,5 @@
 - Stored user entries to go back and select multiple cities.
 - Using .ajax to make request to the api.
 
-![screenshot](assets\img\weather1.PNG)
-![screenshot](assets\img\weather2.PNG)
+![screenshot](https://github.com/BageGonz/Weather-Dashboard/blob/main/assets/img/weather1.PNG)
+![screenshot](https://github.com/BageGonz/Weather-Dashboard/blob/main/assets/img/weather2.PNG)

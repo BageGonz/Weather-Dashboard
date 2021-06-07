@@ -12,20 +12,20 @@
 </head>
 
 <body>
-    <header class="text-center text-white bg-dark p-3 container-fluid">
+    <header class="text-center p-3 text-white bg-dark container-fluid">
         <h1>Weather Dashboard</h1>
     </header>
 
     <main class="container-fluid">
         <!--Search Input-->
         <div class=row>
-            <div class="col-md-3 pl-2">
+            <div class="col-md-3">
                 <div class="card">
                     <div class="card-body">
                         <h2>Search for a City:</h2>
-                        <form class="form-inline">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="city-input">
+                        <form class="form">
+                            <div class="form-inline form-group">
+                                <input id="search-city" type="text" class="form-control" >
                             </div>
                             <button id="search-btn" type="submit" class="btn btn-primary"> <span class="fas"></span>
                                Search
@@ -35,11 +35,12 @@
                 </div>
                 <!--Stored Location-->
                 <div>
-                    <ul id="city-list" class="list-group"></ul>
+                    <ul id="city-result" class="list-group"></ul>
                 </div>
             </div>
             <!--current weather-->
             <div class="col-md-9">
+                
                 <div id="current-weather" class="card">
                     <div class="card-body">
                         <div>

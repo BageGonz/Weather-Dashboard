@@ -55,7 +55,7 @@ function currentWeather(city, weatherSearch) {
 }
 
 function weatherList(weatherSearch) {
-    $("#city-list").empty();
+    $("#city-result").empty();
 
     var keys = Object.keys(weatherSearch);
     for (var i = 0; i < keys.length; i++) {
@@ -69,7 +69,7 @@ function weatherList(weatherSearch) {
         var local = inputLowUp.join(" ");
         searchBtn.text(local);
 
-        $("#city-list").append(searchBtn);
+        $("#city-result").append(searchBtn);
     }
 }
 //var searchHistory = [];
@@ -86,7 +86,7 @@ $(document).ready(function () {
 
     $("#search-btn").on("click", function (event) {
         event.preventDefault();
-        var city = $("#city-input")
+        var city = $("#search-city")
             .val()
             .trim()
             .toLowerCase();
@@ -105,7 +105,7 @@ $(document).ready(function () {
 
     });
 
-    $("#city-list").on("click", "button", function (event) {
+    $("#city-result").on("click", "button", function (event) {
         event.preventDefault();
         var city = $(this).text();
 
